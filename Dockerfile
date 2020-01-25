@@ -39,11 +39,8 @@ RUN set -x \
 # Switch to user steam
 USER steam
 
-WORKDIR $STEAMCMDDIR
-
-VOLUME $STEAMCMDDIR
-
 # Create a script to easily update the server
-RUN echo "${STEAMCMDDIR}/steamcmd.sh +login ${STEAM_USERNAME} ${STEAM_PASSWORD} +force_install_dir ${STEAMAPPDIR} +app_update ${STEAMAPPID} +quit" >> "updateStarboundServer.sh"
+RUN echo "${STEAMCMDDIR}/steamcmd.sh +login ${STEAM_USERNAME} ${STEAM_PASSWORD} +force_install_dir ${STEAMAPPDIR} +app_update ${STEAMAPPID} +quit" >> ${STEAMCMDDIR}/updateStarboundServer.sh \
+    && chmod 777 ${STEAMCMDDIR}/updateStarboundServer.sh 
 
-ENTRYPOINT /bin/bash
+WORKDIR $STEAMCMDDIR
