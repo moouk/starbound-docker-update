@@ -1,2 +1,2 @@
-# starbound
-Starbound dedicated server and SteamCMD 
+# starbound-docker-update
+Dockerfile that contains SteamCMD and a script to update Starbound Server
