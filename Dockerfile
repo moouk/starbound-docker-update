@@ -3,10 +3,8 @@
 ###########################################################################
 FROM debian:buster-slim
 
-LABEL maintainer="urbanbovine@googlemail.com"
-
 ENV STEAMCMDDIR /home/steam/steamcmd
-ENV STEAM_USERNAME ""
+ENV STEAM_USERNAME "moo_uk"
 ENV STEAM_PASSWORD ""
 ENV STEAMAPPID 533830
 ENV STEAMAPPDIR /home/steam/starbound-dedicated
