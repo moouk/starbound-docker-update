@@ -7,7 +7,7 @@ LABEL maintainer="urbanbovine@googlemail.com"
 
 ENV STEAMCMDDIR /home/steam/steamcmd
 ENV STEAM_USERNAME ""
-ENV STEAM_PASSWOrD ""
+ENV STEAM_PASSWORD ""
 ENV STEAMAPPID 533830
 ENV STEAMAPPDIR /home/steam/starbound-dedicated
 
